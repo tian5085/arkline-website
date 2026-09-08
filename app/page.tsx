@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Arrow, ContactBlock, Footer, Header, ProductCard } from "./components";
 import { getFeaturedProducts } from "./product-data";
+import { assetPath } from "./paths";
 
 export const metadata: Metadata = {
   alternates: { languages: { en: "/", "zh-CN": "/zh" } },
@@ -22,7 +23,7 @@ export default function Home() {
       <Header counterpartHref="/zh" />
       <main id="main-content" tabIndex={-1}>
       <section className="hero" id="top" aria-labelledby="hero-title">
-        <img src="/arkline-hero.webp" alt="ARKLINE slim aluminium sliding glass walls connecting a contemporary living space and garden" fetchPriority="high" decoding="async" />
+        <img src={assetPath("/arkline-hero.webp")} alt="ARKLINE slim aluminium sliding glass walls connecting a contemporary living space and garden" fetchPriority="high" decoding="async" />
         <div className="hero-shade" />
         <div className="hero-content">
           <p className="eyebrow eyebrow--light">Aluminium systems for considered living</p>
@@ -81,7 +82,7 @@ export default function Home() {
       </section>
 
       <section className="trade shell" id="trade">
-        <div className="trade-image"><img src="/products/vetro-wardrobe.jpg" alt="ARKLINE smoked glass wardrobe system" loading="lazy" decoding="async" /><div className="trade-badge"><strong>Foshan</strong><span>Global project support</span></div></div>
+        <div className="trade-image"><img src={assetPath("/products/vetro-wardrobe.jpg")} alt="ARKLINE smoked glass wardrobe system" loading="lazy" decoding="async" /><div className="trade-badge"><strong>Foshan</strong><span>Global project support</span></div></div>
         <div className="trade-copy">
           <p className="eyebrow">For international partners</p>
           <h2>Built for your market,<br />backed by our factory.</h2>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Arrow, ContactBlock, Footer, Header, ProductCard, ProductVisual } from "../../components";
 import { getProduct, getRelatedProducts, products } from "../../product-data";
+import { assetPath } from "../../paths";
 
 export function generateStaticParams() {
   return products.map((product) => ({ slug: product.slug }));
@@ -39,7 +40,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
           {product.quickSpecs && <div className="hero-facts">{product.quickSpecs.map((spec) => <div key={spec.label}><span>{spec.label}</span><strong>{spec.value}</strong></div>)}</div>}
           <a className="text-link" href="#overview">Discover the system <span aria-hidden="true">↓</span></a>
         </div>
-        <div className={`product-hero-image ${!product.hero ? "product-hero-image--schematic" : ""}`}>{product.hero ? <img src={product.hero} alt={`${product.name} ${product.category}`} fetchPriority="high" decoding="async" /> : <ProductVisual variant={product.visual} label={product.name} className="schematic-visual--hero" />}</div>
+        <div className={`product-hero-image ${!product.hero ? "product-hero-image--schematic" : ""}`}>{product.hero ? <img src={assetPath(product.hero)} alt={`${product.name} ${product.category}`} fetchPriority="high" decoding="async" /> : <ProductVisual variant={product.visual} label={product.name} className="schematic-visual--hero" />}</div>
       </section>
 
       <section className="product-overview shell" id="overview">
@@ -58,7 +59,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
         <div className={`product-gallery product-gallery--${product.gallery.length}`}>
           {product.gallery.map((image, index) => (
             <figure key={image.src} className={product.gallery.length > 2 && index === 0 ? "gallery-feature" : ""}>
-              <img src={image.src} alt={image.alt} loading="lazy" decoding="async" />
+              <img src={assetPath(image.src)} alt={image.alt} loading="lazy" decoding="async" />
               <figcaption><span>{String(index + 1).padStart(2, "0")}</span>{image.caption}</figcaption>
             </figure>
           ))}

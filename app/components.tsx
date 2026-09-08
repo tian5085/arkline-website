@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element -- Static site assets are pre-optimised and served directly by the deployment. */
 import type { Product } from "./product-data";
 import Link from "next/link";
+import { assetPath } from "./paths";
 
 export const Arrow = () => <span aria-hidden="true">↗</span>;
 
@@ -27,8 +28,8 @@ export function Header({ dark = false, locale = "en", counterpartHref }: { dark?
       </Link>
       <nav className="desktop-nav" aria-label={zh ? "主导航" : "Main navigation"}>
         <Link href={`${prefix}/products`}>{zh ? "产品" : "Products"}</Link>
-        <a href={`${prefix}/products#doors`}>{zh ? "门系统" : "Door systems"}</a>
-        <a href={`${prefix}/products#wall`}>{zh ? "室内系统" : "Interior systems"}</a>
+        <Link href={`${prefix}/products#doors`}>{zh ? "门系统" : "Door systems"}</Link>
+        <Link href={`${prefix}/products#wall`}>{zh ? "室内系统" : "Interior systems"}</Link>
         <Link href={`${prefix}/products/profiles`}>{zh ? "型材与五金" : "Profiles & Hardware"}</Link>
       </nav>
       <div className="nav-actions">
@@ -38,10 +39,10 @@ export function Header({ dark = false, locale = "en", counterpartHref }: { dark?
           <summary aria-label={zh ? "打开导航" : "Open navigation"}>{zh ? "菜单" : "Menu"}</summary>
           <nav aria-label={zh ? "移动端导航" : "Mobile navigation"}>
             <Link href={`${prefix}/products`}>{zh ? "产品" : "Products"}</Link>
-            <a href={`${prefix}/products#doors`}>{zh ? "门系统" : "Door systems"}</a>
-            <a href={`${prefix}/products#wall`}>{zh ? "室内系统" : "Interior systems"}</a>
+            <Link href={`${prefix}/products#doors`}>{zh ? "门系统" : "Door systems"}</Link>
+            <Link href={`${prefix}/products#wall`}>{zh ? "室内系统" : "Interior systems"}</Link>
             <Link href={`${prefix}/products/profiles`}>{zh ? "型材与五金" : "Profiles & Hardware"}</Link>
-            <a href={`${prefix}/#contact`}>{zh ? "联系我们" : "Contact"}</a>
+            <Link href={`${prefix}/#contact`}>{zh ? "联系我们" : "Contact"}</Link>
           </nav>
         </details>
       </div>
@@ -52,7 +53,7 @@ export function Header({ dark = false, locale = "en", counterpartHref }: { dark?
 export function ProductCard({ product, className = "", locale = "en" }: { product: Product; className?: string; locale?: "en" | "zh" }) {
   return (
     <Link className={`product-tile ${className} ${!product.hero ? "product-tile--schematic" : ""}`} href={`${locale === "zh" ? "/zh" : ""}/products/${product.slug}`}>
-      {product.hero ? <img src={product.hero} alt={`${product.name} — ${product.category}`} loading="lazy" decoding="async" /> : <ProductVisual variant={product.visual} label={product.name} locale={locale} />}
+      {product.hero ? <img src={assetPath(product.hero)} alt={`${product.name} — ${product.category}`} loading="lazy" decoding="async" /> : <ProductVisual variant={product.visual} label={product.name} locale={locale} />}
       <div className="card-overlay" />
       <div className="card-top"><span>{product.index}</span><Arrow /></div>
       <div className="card-copy">

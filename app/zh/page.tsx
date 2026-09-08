@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Arrow, ContactBlock, Footer, Header, ProductCard } from "../components";
 import { zhProducts } from "../product-data-zh";
 import { getFeaturedProducts } from "../product-data";
+import { assetPath } from "../paths";
 
 export const metadata: Metadata = {
   title: "ARKLINE｜建筑门与室内系统",
@@ -25,7 +26,7 @@ export default function ChineseHome() {
       <Header locale="zh" counterpartHref="/" />
       <main id="main-content" tabIndex={-1}>
       <section className="hero" id="top" aria-labelledby="zh-hero-title">
-        <img src="/arkline-hero.webp" alt="ARKLINE 极窄铝框玻璃移门连接当代室内空间与花园" fetchPriority="high" decoding="async" />
+        <img src={assetPath("/arkline-hero.webp")} alt="ARKLINE 极窄铝框玻璃移门连接当代室内空间与花园" fetchPriority="high" decoding="async" />
         <div className="hero-shade" />
         <div className="hero-content">
           <p className="eyebrow eyebrow--light">为当代生活而设计的铝合金系统</p>
@@ -51,7 +52,7 @@ export default function ChineseHome() {
 
       <section className="material-section" id="materials"><div className="shell material-grid"><div className="material-copy"><p className="eyebrow eyebrow--light">材质与颜色</p><h2>安静的饰面，<br />精确的细节。</h2><p>铝合金赋予系统强度、精度与克制边界。阳极氧化和喷涂颜色经过协调，让建筑空间成为主角，而不是框架。</p><a className="button button--outline" href={`https://wa.me/8613902832183?text=${encodeURIComponent("Ryan 您好，我想申请 ARKLINE 的颜色样板。")}`} target="_blank" rel="noreferrer">索取颜色样板 <Arrow /></a></div><div className="finish-panel" aria-label="铝材参考颜色"><div className="finish finish--graphite"><span>石墨灰</span><small>01</small></div><div className="finish finish--bronze"><span>深铜色</span><small>02</small></div><div className="finish finish--champagne"><span>香槟金</span><small>03</small></div><div className="finish finish--silver"><span>自然银</span><small>04</small></div></div></div></section>
 
-      <section className="trade shell" id="trade"><div className="trade-image"><img src="/products/vetro-wardrobe.jpg" alt="ARKLINE 烟熏玻璃衣柜系统" loading="lazy" decoding="async" /><div className="trade-badge"><strong>佛山</strong><span>全球项目支持</span></div></div><div className="trade-copy"><p className="eyebrow">面向全球合作伙伴</p><h2>为您的市场开发，<br />由我们的工厂支持。</h2><p>无论是建立完整产品系列，还是落实单个项目，ARKLINE 都将产品深化与制造整合在同一个高效流程中。</p><ul><li><span>01</span> 尺寸与系统配置定制</li><li><span>02</span> 私有品牌与 OEM 合作</li><li><span>03</span> 颜色、玻璃与五金协调</li><li><span>04</span> 出口文件与包装支持</li></ul><a className="button button--dark" href="#contact">成为合作伙伴 <Arrow /></a></div></section>
+      <section className="trade shell" id="trade"><div className="trade-image"><img src={assetPath("/products/vetro-wardrobe.jpg")} alt="ARKLINE 烟熏玻璃衣柜系统" loading="lazy" decoding="async" /><div className="trade-badge"><strong>佛山</strong><span>全球项目支持</span></div></div><div className="trade-copy"><p className="eyebrow">面向全球合作伙伴</p><h2>为您的市场开发，<br />由我们的工厂支持。</h2><p>无论是建立完整产品系列，还是落实单个项目，ARKLINE 都将产品深化与制造整合在同一个高效流程中。</p><ul><li><span>01</span> 尺寸与系统配置定制</li><li><span>02</span> 私有品牌与 OEM 合作</li><li><span>03</span> 颜色、玻璃与五金协调</li><li><span>04</span> 出口文件与包装支持</li></ul><a className="button button--dark" href="#contact">成为合作伙伴 <Arrow /></a></div></section>
 
       <section className="process shell" id="about"><div className="section-heading section-heading--compact"><div><p className="eyebrow">合作流程</p><h2>从想法到安装。</h2></div><p>清晰的四阶段流程，让海外项目从概念到生产更加可控，减少不必要的意外。</p></div><div className="steps">{steps.map(([number, title, text]) => <article key={number}><span>{number}</span><h3>{title}</h3><p>{text}</p></article>)}</div></section>
       <ContactBlock locale="zh" />

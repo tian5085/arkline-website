@@ -8,6 +8,10 @@
   --accent: #75583f;
 }
 
+.not-found { min-height: 68vh; padding-block: clamp(9rem, 18vw, 15rem) 6rem; }
+.not-found h1 { max-width: 12ch; margin: 1rem 0; font-size: clamp(3rem, 8vw, 7rem); line-height: .92; }
+.not-found p:not(.eyebrow) { margin: 0 0 2rem; color: var(--muted); }
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scrollbar-gutter: stable; background: var(--paper); }
 body { min-width: 320px; margin: 0; overflow-x: clip; background: var(--paper); color: var(--ink); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
