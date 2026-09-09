@@ -171,11 +171,13 @@ footer { background: #1c1d1b; color: white; }
   letter-spacing: .14em;
 }
 
+/* 首页主标题 */
 .locale-zh .hero h1 {
   line-height: 1.05;
   letter-spacing: -.045em;
 }
 
+/* 中文通用大标题 */
 .locale-zh .intro h2,
 .locale-zh .section-heading h2,
 .locale-zh .material-copy h2,
@@ -186,6 +188,7 @@ footer { background: #1c1d1b; color: white; }
   letter-spacing: -.035em;
 }
 
+/* 中文普通正文 */
 .locale-zh .intro-grid p,
 .locale-zh .section-heading > p,
 .locale-zh .section-heading > div:last-child > p,
@@ -194,17 +197,28 @@ footer { background: #1c1d1b; color: white; }
   font-size: 15px;
 }
 
+/* 产品页一级标题：产品 */
 .locale-zh .catalog-title h1 {
-  line-height: .9;
-  letter-spacing: -.05em;
+  font-size: clamp(60px, 7.2vw, 116px);
+  line-height: .94;
+  letter-spacing: -.04em;
 }
 
+/* 产品家族标题：门与隔断系统 / 卫浴门系统 / 衣帽间系统等 */
+.locale-zh .family-heading h2 {
+  font-size: clamp(42px, 5vw, 76px);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+
+/* 型材与五金页主标题 */
 .locale-zh .profiles-hero h1 {
   font-size: clamp(58px, 6.4vw, 104px);
   line-height: .98;
   letter-spacing: -.035em;
 }
 
+/* 中文辅助文字 */
 .locale-zh .hero-index,
 .locale-zh .finish span,
 .locale-zh .footer-top p,
@@ -220,6 +234,25 @@ footer { background: #1c1d1b; color: white; }
   transform: none;
   letter-spacing: .08em;
 }
+
+/* 中文手机端 */
+@media (max-width: 640px) {
+  .locale-zh .catalog-title h1 {
+    font-size: 58px;
+    line-height: .96;
+  }
+
+  .locale-zh .family-heading h2 {
+    font-size: 42px;
+    line-height: 1.12;
+  }
+
+  .locale-zh .profiles-hero h1 {
+    font-size: 58px;
+    line-height: 1;
+  }
+}
+
 /* Product collection */
 .featured-products { padding-block: 140px 155px; }
 .section-heading > div:last-child > p { margin: 0 0 25px; color: #60605a; font-size: 14px; line-height: 1.75; }
