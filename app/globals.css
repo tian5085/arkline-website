@@ -155,14 +155,52 @@ footer { background: #1c1d1b; color: white; }
 
 /* Chinese locale */
 .locale-zh { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", Arial, sans-serif; }
-.locale-zh .desktop-nav, .locale-zh .nav-cta, .locale-zh .mobile-menu, .locale-zh .button, .locale-zh .text-link { letter-spacing: .06em; text-transform: none; }
-.locale-zh .eyebrow { letter-spacing: .14em; }
-.locale-zh .hero h1 { line-height: 1.05; letter-spacing: -.045em; }
-.locale-zh .intro h2, .locale-zh .section-heading h2, .locale-zh .material-copy h2, .locale-zh .trade-copy h2, .locale-zh .contact h2 { line-height: 1.15; letter-spacing: -.035em; }
-.locale-zh .catalog-title h1 { line-height: .9; letter-spacing: -.05em; }
-.locale-zh .profiles-hero h1 { font-size: clamp(58px, 6.4vw, 104px); line-height: .98; letter-spacing: -.035em; }
-.locale-zh .hero-index, .locale-zh .finish span, .locale-zh .footer-top p, .locale-zh .footer-bottom { letter-spacing: .1em; text-transform: none; }
-
+.locale-zh .desktop-nav,
+.locale-zh .nav-cta,
+.locale-zh .mobile-menu,
+.locale-zh .button,
+.locale-zh .text-link {
+  letter-spacing: .06em;
+  text-transform: none;
+}
+.locale-zh .eyebrow {
+  letter-spacing: .14em;
+}
+.locale-zh .hero h1 {
+  line-height: 1.05;
+  letter-spacing: -.045em;
+}
+.locale-zh .intro h2,
+.locale-zh .section-heading h2,
+.locale-zh .material-copy h2,
+.locale-zh .trade-copy h2,
+.locale-zh .contact h2 {
+  line-height: 1.15;
+  letter-spacing: -.035em;
+}
+.locale-zh .catalog-title h1 {
+  line-height: .9;
+  letter-spacing: -.05em;
+}
+.locale-zh .profiles-hero h1 {
+  font-size: clamp(58px, 6.4vw, 104px);
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+.locale-zh .hero-index,
+.locale-zh .finish span,
+.locale-zh .footer-top p,
+.locale-zh .footer-bottom {
+  letter-spacing: .1em;
+  text-transform: none;
+}
+/* 修复中文竖排方向 */
+.locale-zh .finish span {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  transform: none;
+  letter-spacing: .08em;
+}
 /* Product collection */
 .featured-products { padding-block: 140px 155px; }
 .section-heading > div:last-child > p { margin: 0 0 25px; color: #60605a; font-size: 14px; line-height: 1.75; }
