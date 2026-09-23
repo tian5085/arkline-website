@@ -73,7 +73,7 @@ export function ContactBlock({ productName, locale = "en" }: { productName?: str
         <div>
           <p className="eyebrow eyebrow--light">{zh ? "项目咨询" : "International enquiries"}</p>
           <h2>{zh ? <>一起定义<br />您的项目。</> : <>Let&apos;s define<br />your project.</>}</h2>
-          <p>{zh ? "请告诉我们洞口尺寸、数量、目标市场和项目计划，Ryan Lei 将与 ARKLINE 团队为您协调下一步。" : "Share your opening sizes, quantities, target market and project schedule. Ryan Lei will coordinate the next step with the ARKLINE team."}</p>
+          <p>{zh ? "请告诉我们洞口尺寸、数量、目标市场和项目计划，Ryan 将与 ARKLINE 团队为您协调下一步。" : "Share your opening sizes, quantities, target market and project schedule. Ryan will coordinate the next step with the ARKLINE team."}</p>
           <a className="button button--light" href={`https://wa.me/8613902832183?text=${message}`} target="_blank" rel="noreferrer">{zh ? "WhatsApp 咨询" : "Message on WhatsApp"} <Arrow /></a>
         </div>
         <div className="contact-details">
