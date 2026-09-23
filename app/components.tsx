@@ -80,7 +80,7 @@ export function ContactBlock({ productName, locale = "en" }: { productName?: str
           <div><span>{zh ? "联系人" : "Contact"}</span><strong>Ryan Lei</strong></div>
           <div><span>{zh ? "中国 / WhatsApp" : "China / WhatsApp"}</span><a href="tel:+8613902832183">+86 139 0283 2183</a></div>
           <div><span>{zh ? "美国电话" : "United States"}</span><a href="tel:+12057647011">+1 205 764 7011</a></div>
-          <div className="contact-address"><span>{zh ? "公司与工厂" : "Company & factory"}</span>{zh ? <address>ARKLINE 建筑门与室内系统<br />广东省佛山市南海区狮山镇官窑办事处</address> : <address>ARKLINE Architectural Door & Interior Systems<br />Guanyao Office, Shishan Town, Nanhai District,<br />Foshan, Guangdong, China</address>}<small>{zh ? <>ARKLINE Architectural Door & Interior Systems<br />Foshan, Guangdong, China</> : <>ARKLINE 建筑门与室内系统<br />中国 · 广东佛山</>}</small></div>
+          <div className="contact-address"><span>{zh ? "公司与工厂" : "Company & factory"}</span>{zh ? <address>ARKLINE 建筑门与室内系统<br /> 广东省佛山市南海区狮山镇工业区</address> : <address>ARKLINE Architectural Door & Interior Systems<br />Industrial Zone, Shishan Town, Nanhai District,<br />Foshan, Guangdong, China</address>}<small>{zh ? <>ARKLINE Architectural Door & Interior Systems<br />Foshan, Guangdong, China</> : <>ARKLINE 建筑门与室内系统<br />中国 · 广东佛山</>}</small></div>
         </div>
       </div>
     </section>
