@@ -26,9 +26,9 @@ export default function Home() {
         <img src={assetPath("/arkline-hero.webp")} alt="ARKLINE slim aluminium sliding glass walls connecting a contemporary living space and garden" fetchPriority="high" decoding="async" />
         <div className="hero-shade" />
         <div className="hero-content">
-          <p className="eyebrow eyebrow--light">Aluminium systems for considered living</p>
+          <p className="eyebrow eyebrow--light"> Doors, partitions and bespoke furniture systems for contemporary architecture</p>
           <h1 id="hero-title">Frames that disappear.<br />Spaces that connect.</h1>
-          <p className="hero-copy">Doors, partitions and interior systems developed in Foshan for global residential, retail and hospitality projects.</p>
+          <p className="hero-copy">Specialising in doors, partitions and bespoke furniture systems, we provide integrated spatial solutions for residential, commercial and hospitality projects worldwide.</p>
           <div className="hero-actions">
             <Link className="button button--light" href="/products">View the collection <Arrow /></Link>
             <a className="text-link text-link--light" href="#contact">Discuss a project <span aria-hidden="true">→</span></a>
