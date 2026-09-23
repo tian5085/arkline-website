@@ -29,9 +29,9 @@ export default function ChineseHome() {
         <img src={assetPath("/arkline-hero.webp")} alt="ARKLINE 极窄铝框玻璃移门连接当代室内空间与花园" fetchPriority="high" decoding="async" />
         <div className="hero-shade" />
         <div className="hero-content">
-          <p className="eyebrow eyebrow--light">为当代生活而设计的铝合金系统</p>
+          <p className="eyebrow eyebrow--light">为当代建筑而设计的门、隔断与定制家具系统</p>
           <h1 id="zh-hero-title">让边框隐去，<br />让空间相连。</h1>
-          <p className="hero-copy">源自佛山的门、隔断与室内家居系统，服务全球住宅、商业与酒店项目。</p>
+          <p className="hero-copy">专注于门、隔断与定制家具系统，为全球住宅、商业与酒店项目提供一体化空间解决方案。</p>
           <div className="hero-actions"><Link className="button button--light" href="/zh/products">浏览产品 <Arrow /></Link><a className="text-link text-link--light" href="#contact">洽谈项目 <span aria-hidden="true">→</span></a></div>
         </div>
         <div className="hero-index" aria-label="产品类别"><span>吊趟</span><span>折叠</span><span>中轴</span><span>室内系统</span></div>
