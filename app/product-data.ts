@@ -18,9 +18,9 @@ export type Product = {
 
 export const families = [
   { id: "doors", title: "Doors & Partitions", text: "Suspended sliding, folding, pivot and screen systems for flexible architectural openings." },
-  { id: "bathroom", title: "Bathroom Doors", text: "Slim framed, flush and inward-opening solutions developed around precise site conditions." },
+  { id: "bathroom", title: "Bathroom Doors", text: "Minimalist hinged doors adapted to different wall types and installation conditions, with a complete range of inward- and outward-opening solutions." },
   { id: "invisible", title: "Aluminium-Wood & Invisible Doors", text: "Panel-ready and plaster-ready doors that align the opening with the surrounding wall." },
-  { id: "wall", title: "Wall & Cabinet Systems", text: "Integrated aluminium structures that connect storage, display, wall panels and lighting." },
+  { id: "wall", title: "Wall & Cabinet Systems", text: "An integrated door, wall and cabinet system unifies materials and visual design to create a pure Italian minimalist interior. Coordinated doors and walls in matching colours bring a cohesive aesthetic to the whole space." },
   { id: "wardrobe", title: "Wardrobe Systems", text: "Open and glazed wardrobe architectures with modular shelving and coordinated illumination." },
   { id: "display", title: "Display & Cabinetry", text: "Glass cabinets, wine storage and illuminated display systems for residential and retail spaces." },
 ];
@@ -401,7 +401,7 @@ export const products: Product[] = [
       { src: "/products/new-2026/1912.webp", alt: "Media wall with staggered illuminated shelves and glass display towers", caption: "Staggered shelf lines, glass towers and a floating base cabinet frame the media zone." },
       { src: "/products/new-2026/1914.webp", alt: "Wall-mounted metal display shelves with integrated backlighting", caption: "Slim folded-metal shelves integrate linear light while keeping wall fixings visually minimal." },
       { src: "/products/new-2026/1915.webp", alt: "Side detail of wall-mounted shelves and concealed linear lighting", caption: "A side view shows the thin shelf profile, raised edge and concealed light line." },
-      { src: "/products/new-2026/1920.webp", alt: "Full-height cabinet wall with a continuous illuminated glass display bay", caption: "Closed storage surrounds a continuous glass display bay for barware and tableware." },
+      { src: "/products/new-2026/1920.webp", alt: "Full-height cabinet wall with a continuous illuminated glass display bay", caption: "Minimalist kitchen cabinetry | Integrated spice storage. Kitchen cabinets and concealed spice racks combine in one storage solution. Recessed spice racks | A clean, minimalist kitchen aesthetic." },
       { src: "/products/real/1854.JPG", alt: "Illuminated modular display wall for a residential collection", caption: "Slim posts and illuminated shelves create a tailored wall for art and collectibles." },
       { src: "/products/real/1816(1).JPG", alt: "Floating wall shelves and drawers with integrated lighting", caption: "Cantilevered shelves and suspended drawers keep the storage wall visually light." },
       { src: "/products/real/1817(1).JPG", alt: "Wall-integrated dressing system with shelves, rails and drawers", caption: "Hanging, display and drawer storage are coordinated within one wall elevation." },
